@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Guide</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ultimate Tourist Guide</a>           
+            <a href = "FAQ.html" style = "margin-left: 50% ;">
+                    <img src = "question.png"> </a>
+
+            <button onclick="aaa()" class="btn btn-primary"> Change Color </button>
+            <button id="popup-btn" class="btn btn-primary">Subscribe</button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body"> 
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hotels.html">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="transport.html">Transportation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#information">Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#destinations">Top Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tips">Travel Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 style="color:#7397db;; text-align:center">Question</h2>
+
+    <div class="layout">
+        <div class="ASK">
+            <div class="ASK__question">
+                <p>1. How can I book a hotel and tour date?</p>
+            </div>
+            <div class="ASK__answer">
+                <p> You can book a hotel and tour through travel agencies.
+                    - Travel agencies: many offer package tours where you can immediately choose a hotel and tour with included flights and excursions. On our website you will find the "Hotel" and "Transport" tabs where you can also book a hotel and date
+                    - Hotel websites: you can also choose dates and book a room directly on the hotel website.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p>2. Where is the best place to go on holiday in winter?</p>
+            </div>
+            <div class="ASK__answer">
+                <p>- Both warm and snowy destinations are popular for winter holidays:
+                    - Warm countries:
+                    - The Maldives, Thailand, and the UAE are ideal places for a beach holiday in winter with warm seas and wonderful weather.
+                    - Ski resorts:
+                    - Switzerland, Austria, and France (the Alps) are great places for winter sports and mountain recreation.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p>3. Where can I go with my family?</p>
+            </div>
+            <div class="ASK__answer">
+                <p>- The following destinations are perfect for a family vacation:
+                    - Spain (Costa Brava, Canary Islands) — warm sea, entertainment for children and adults.
+                    - France (Disneyland in Paris) — an ideal place for children.
+                    - Turkey (Antalya, Kemer) — many family hotels with animation and water parks.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p>4. What are the best destinations for active tourism?</p>
+            </div>
+            <div class="ASK__answer">
+                <p>Nepal (Himalayas, trekking), 
+                New Zealand (hiking, water sports), 
+                Norway (trekking in the fjords), 
+                Peru (trekking to Machu Picchu), 
+                Canada (mountaineering, hiking in national parks) and Iceland (glacial caves, geysers) Popular among active holiday lovers.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p>5. Which countries are best for solo travel and which for family travel?</p>
+            </div>
+            <div class="ASK__answer">
+                <p>Japan, New Zealand, Canada, Portugal and Iceland are considered safe and convenient for solo travel. 
+                With family travel, it is better to travel to countries with developed infrastructure and entertainment, such as Spain, Italy, France or Australia.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p>6. Which countries are the safest for tourists in 2024?</p>
+            </div>
+            <div class="ASK__answer">
+                <p>The safest countries in 2024 include Iceland, New Zealand, Japan, Portugal, Switzerland, Austria, and Denmark. 
+                    These countries have low crime rates and stable political environments.</p>
+            </div>
+        </div>
+    </div>
+     <div id="popup-form" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <h2>Subscribe to our Newsletter</h2>
+            <form action="#" method="post">
+                <div class="mb-3">
+                    <label for="subscriber-name" class="form-label">Your Name:</label>
+                    <input type="text" class="form-control" id="subscriber-name" name="subscriber-name" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subscriber-email" class="form-label">Your Email:</label>
+                    <input type="email" class="form-control" id="subscriber-email" name="subscriber-email" placeholder="Your Email" required>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-success">Subscribe</button>
+                </div>   
+            </form>
+        </div>
+    </div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="FAQScript.js"></script> 
+</body>
+
+</html>
