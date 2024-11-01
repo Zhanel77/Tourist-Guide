@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Guide</title> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ultimate Tourist Guide</a>
+            <a href="FAQ.html" style="margin-left: 50%;">
+              <img src="question.png"> 
+            </a>
+            
+          <ul class="navbar-menu white-section">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="hotels.html">Hotels</a></li>
+            <li class="nav-item"><a class="nav-link" href="transport.html">Transportation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#information">Information</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destinations">Top Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tips">Travel Tips</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle-switch">
+            <span class="slider round"></span>
+        </label>
+        <link rel="stylesheet" href="css/theme.css">
+        <button id="popup-btn" class="btn btn-primary">Profile</button>
+        <button id="logout-btn" class="btn btn-secondary" style="display: none;">Logout</button>
+        
+        
+        <select id="language-selector" class="form-select" style="width: auto;">
+            <option value="en">English</option>
+            <option value="ru">Русский</option>
+            <option value="kk">Қазақша</option>
+        </select>
+        
+    </nav>
+
+    <section class=" white-section d-flex align-items-center vh-100">
+        <div class="container">
+            <div class="row">          
+                <div class="col-md-6 p-0">
+                    <div class="left-image-container">
+                        <img src="пут.jpg" alt="Tourist Guide" class="img-fluid left-image">
+                    </div>
+                </div>
+                
+                <div class="white-section col-md-6 d-flex flex-column justify-content-center">
+                    <p id="greeting"></p>
+                    <h1 class="display-4" id="main-title">Discover the Best Destinations</h1>
+                    <p class="lead" id="main-description">Explore top tourist attractions, hotels, and travel tips to make your journey unforgettable.</p>
+                    <a href="#destinations" class="btn btn-primary" id="exploreNowBtn">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main>
+        <section  class="white-section" id="information">
+            <header>
+                <h2 id="welcome-title"></h2>
+                <p id="welcome-description">We have collected information about the most popular and exciting places in the world for you to help you choose the perfect country to visit and select the best tour. Our website makes it easy to find affordable flights and tickets, as well as book hotels of all categories - from cozy budget options to luxury resorts. All the necessary services are collected in one place, so you do not have to worry about the details. Plan your trip in comfort and trust us - we have everything included for your convenience and unforgettable impressions!</p>
+            </header>
+        </section>
+        <section class="white-section" id="destinations">
+            <div class="container-fluid pt-5" style="display: flex;">
+                <div  class="animation-container" >
+                    <img src="самолет.jpg" alt="Самолет" class="plane">
+                </div>                
+            </div>
+            <header>
+                <h2 id="destinations-title"></h2>
+                <p id="destinations-description">Explore some of the most beautiful and popular destinations around the world, from breathtaking mountains to pristine beaches, bustling cities to serene countryside.</p>
+            </header>
+        </section>
+        <div id="carouselExample" class="white-section carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="bali.jpg" class="d-block w-100" alt="Bali">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bali is an Indonesian island known for its terraced rice fields, spiritual temples, and unique culture.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Токио.jpg" class="d-block w-100" alt="Tokyo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Lively Rhythm of Tokyo City</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="рим.webp" class="d-block w-100" alt="Rome">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a stroll through the incredible Colosseum</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="9e3852df119a77eb9958308b1ad36773.jpg" class="d-block w-100" alt="Paris">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Paris is the city of love, where every corner breathes romance</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tay.jpg" class="d-block w-100" alt="Thailand">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Thailand is famous for its beautiful beaches.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="альпы.jpg" class="d-block w-100" alt="Alps">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>A stunning view of the Swiss Alps</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="white-section" id="tips">
+            <header>
+                <h2 id="tips-title"></h2>
+            </header>
+            <section class="container text-center mt-5 white-section" >
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <div class="col-1">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title" id="tip1-title">Pack Smart, Travel Light</h3>
+                                <ul class="list-unstyled" id="tip1-description">
+                                    <li>Pack light and smart, leaving unnecessary items behind.</li>
+                                    <li>Keep essential documents safe, such as your passport and tickets.</li>
+                                    <li>Learn a few basic phrases in the local language for better communication.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-2 ">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title" id="tip2-title">Stay Safe and Secure</h3>
+                                <ul class="list-unstyled" id="tip2-description">
+                                    <li>Make digital and physical copies of important documents, including your passport and travel insurance.</li>
+                                    <li>Share your itinerary with a trusted friend or family member.</li>
+                                    <li>Be mindful of your surroundings, particularly in crowded areas.</li>
+                                    <li>Avoid displaying valuables that might attract unwanted attention.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-3">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title" id="tip3-title">Navigating Jet Lag and Local Customs</h3>
+                                <ul class="list-unstyled" id="tip3-description">
+                                    <li>Be prepared for jet lag, a common sleep disorder caused by rapid travel across time zones.</li>
+                                    <li>Research and respect local customs and traditions to avoid any cultural faux pas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title" id="tip4-title">Money Matters</h3>
+                                <ul class="list-unstyled" id="tip4-description">
+                                    <li>Carry a mix of payment methods: some local currency, a credit card, and a backup card.</li>
+                                    <li>Inform your bank about your travel plans to prevent any unexpected card blocks.</li>
+                                    <li>Be aware of currency exchange rates and exchange money at reputable places like banks or official counters.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div id="popup-form" class="white-section popup">
+            <div class="popup-content">
+                <span id="close-popup" class="close">&times;</span>
+                <h2>Login / Register</h2>
+                <form id="auth-form" action="#" method="post">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of Birth:</label>
+                        <input type="date" class="form-control" id="dob" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirm Password:</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button id="auth-btn" type="button" class="btn btn-success">Login / Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <audio id="AuthSound" src="аудио.mp3" preload="auto"></audio>
+
+        
+    </main>
+    <footer>
+        <p id="footer-text">Created by Zhanel and Zhaniya | Contact: <a href="mailto:info@touristguide.com">info@touristguide.com</a></p>
+        <span id="datetime" style="margin-left: 20px; font-weight: bold;"></span>
+    </footer>
+
+    <script src="index.script.js"></script> 
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>
