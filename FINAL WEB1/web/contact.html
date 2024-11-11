@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="navbar-brand" href="index.html">Ultimate Tourist Guide</a>
+            <a href="FAQ.html" style="margin-left: 50%;">
+                <img src="question.png" alt="FAQ">
+            </a> 
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle-switch">
+                <span class="slider round"></span>
+            </label>
+            <link rel="stylesheet" href="css/theme.css">
+            
+            <button id="popup-btn" class="btn btn-primary">Login</button>
+            <button id="logout-btn" class="btn btn-secondary" style="display: none;">Logout</button>
+            
+            <select id="language-selector" class="form-select" style="width: auto; margin-left: auto;">
+                <option value="en">English</option>
+                <option value="ru">Russian</option>
+                <option value="kk">Kazakh</option>
+            </select>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body"> 
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hotels.html">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transportation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#information">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#destinations">Top Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#tips">Travel Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav> 
+    <main>
+        <section id="contact" class="py-5 white-section">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form id="contact-form" action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="destination" class="form-label">Favorite Destination:</label>
+                        <select class="form-select" id="destination" name="destination" required>
+                            <option value="">Select a destination</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="bali">Bali</option>
+                            <option value="japan">Japan</option>
+                            <option value="turkey">Turkey</option>
+                        </select>
+                        <div class="error-message" id="destination-error"></div>
+                    </div>
+                    <div>
+                        <p>Rate our site: <span id="rating-output">0</span> / 5</p>
+                        <div id="rating">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <p id="response-message"></p> 
+            </div>
+            <div id="popup-form" class="white-section popup">
+                <div class="popup-content">
+                    <span id="close-popup" class="close">&times;</span>
+                    <h2>Login / Register</h2>
+                    <form id="auth-form" action="#" method="post">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="username" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dob" class="form-label">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password:</label>
+                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button id="auth-btn" type="button" class="btn btn-success">Login / Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-text">Created by Zhanel and Zhaniya | Contact: <a href="mailto:info@touristguide.com">info@touristguide.com</a></p>
+        <span id="datetime" style="margin-left: 20px; font-weight: bold;"></span>
+    </footer>
+
+ <script src="js/bootstrap.bundle.min.js"></script>
+<script src="ContactScript.js"></script>
+<script src="Contacttranslate.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Guide</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ultimate Tourist Guide</a>           
+            <a href = "FAQ.html" style = "margin-left: 50% ;">
+                    <img src = "question.png"> </a>
+
+            
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle-switch">
+            <span class="slider round"></span>
+        </label>
+        <link rel="stylesheet" href="css/theme.css">
+        
+            <button id="popup-btn" class="btn btn-primary">Login</button>
+            <button id="logout-btn" class="btn btn-secondary" style="display: none;">Logout</button>
+
+            <select id="language-selector" class="form-select" style="width: auto;">
+                <option value="en" selected>English</option>
+                <option value="ru">Русский</option>
+                <option value="kk">Казахский</option>
+            </select>
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body"> 
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hotels.html">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="transport.html">Transportation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#information">Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#destinations">Top Destinations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#tips">Travel Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 style="color:#7397db;; text-align:center">Question</h2>
+
+    <div class="layout">
+        <div class="ASK">
+            <div class="ASK__question">
+                <p id="question1">1. How can I book a hotel and tour date?</p>
+            </div>
+            <div class="ASK__answer">
+                <p id="answer1"> You can book a hotel and tour through travel agencies.
+                    - Travel agencies: many offer package tours where you can immediately choose a hotel and tour with included flights and excursions. On our website you will find the "Hotel" and "Transport" tabs where you can also book a hotel and date
+                    - Hotel websites: you can also choose dates and book a room directly on the hotel website.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p id="question2">2. Where is the best place to go on holiday in winter?</p>
+            </div>
+            <div class="ASK__answer">
+                <p id="answer2">- Both warm and snowy destinations are popular for winter holidays:
+                    - Warm countries:
+                    - The Maldives, Thailand, and the UAE are ideal places for a beach holiday in winter with warm seas and wonderful weather.
+                    - Ski resorts:
+                    - Switzerland, Austria, and France (the Alps) are great places for winter sports and mountain recreation.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p id="question3">3. Where can I go with my family?</p>
+            </div>
+            <div class="ASK__answer">
+                <p id="answer3">- The following destinations are perfect for a family vacation:
+                    - Spain (Costa Brava, Canary Islands) — warm sea, entertainment for children and adults.
+                    - France (Disneyland in Paris) — an ideal place for children.
+                    - Turkey (Antalya, Kemer) — many family hotels with animation and water parks.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p id="question4">4. What are the best destinations for active tourism?</p>
+            </div>
+            <div class="ASK__answer">
+                <p id="answer4">Nepal (Himalayas, trekking), 
+                New Zealand (hiking, water sports), 
+                Norway (trekking in the fjords), 
+                Peru (trekking to Machu Picchu), 
+                Canada (mountaineering, hiking in national parks) and Iceland (glacial caves, geysers) Popular among active holiday lovers.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p id="question5">5. Which countries are best for solo travel and which for family travel?</p>
+            </div>
+            <div class="ASK__answer">
+                <p id="answer5">Japan, New Zealand, Canada, Portugal and Iceland are considered safe and convenient for solo travel. 
+                With family travel, it is better to travel to countries with developed infrastructure and entertainment, such as Spain, Italy, France or Australia.</p>
+            </div>
+        </div>
+        <div class="ASK">
+            <div class="ASK__question">
+                <p id="question6">6. Which countries are the safest for tourists in 2024?</p>
+            </div>
+            <div class="ASK__answer">
+                <p id="answer6">The safest countries in 2024 include Iceland, New Zealand, Japan, Portugal, Switzerland, Austria, and Denmark. 
+                    These countries have low crime rates and stable political environments.</p>
+            </div>
+        </div>
+    </div>
+    <div id="popup-form" class="white-section popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="auth-form" action="#" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="dob" class="form-label">Date of Birth:</label>
+                    <input type="date" class="form-control" id="dob" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <div class="mb-3">
+                    <label for="confirm-password" class="form-label">Confirm Password:</label>
+                    <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <div class="d-grid gap-2">
+                    <button id="auth-btn" type="button" class="btn btn-success">Login / Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <audio id="AuthSound" src="аудио.mp3" preload="auto"></audio>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="FAQtranslate.js"></script>
+<script src="FAQScript.js"></script> 
+</body>
+</html>
